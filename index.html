@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>エンリコ・プッチ神父 — 天国へ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars" id="stars"></div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="subtitle">JOJO第6部 ストーンオーシャン</p>
+    <h1>エンリコ・プッチ神父</h1>
+    <p class="catch">「天国へ到達する——それが我が使命だ」</p>
+  </div>
+</header>
+
+<main>
+  <section class="profile card">
+    <h2>プロフィール</h2>
+    <table>
+      <tr><th>本名</th><td>エンリコ・プッチ</td></tr>
+      <tr><th>出身</th><td>フロリダ州</td></tr>
+      <tr><th>職業</th><td>グリーン・ドルフィン刑務所　司祭</td></tr>
+      <tr><th>スタンド</th><td>ホワイトスネイク → C-MOON → メイド・イン・ヘブン</td></tr>
+      <tr><th>能力</th><td>記憶ディスクの操作 / 重力操作 / 時間の加速</td></tr>
+    </table>
+  </section>
+
+  <section class="stands card">
+    <h2>スタンド進化</h2>
+    <div class="stand-list">
+      <div class="stand-item">
+        <span class="stand-icon">🐍</span>
+        <h3>ホワイトスネイク</h3>
+        <p>人間の記憶とスタンドを「ディスク」として抜き取る能力。幻術も使える。</p>
+      </div>
+      <div class="stand-item">
+        <span class="stand-icon">🌙</span>
+        <h3>C-MOON</h3>
+        <p>重力操作の能力。触れたものの表と裏を反転させ、地球の重力を逆転させる。</p>
+      </div>
+      <div class="stand-item">
+        <span class="stand-icon">✨</span>
+        <h3>メイド・イン・ヘブン</h3>
+        <p>究極進化形。宇宙の時間を際限なく加速させる「天国」到達のスタンド。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="philosophy card">
+    <h2>プッチ神父の哲学</h2>
+    <blockquote>「人間は自分の運命がわかっているとき、初めて安心して生きられる」</blockquote>
+    <p>ディオ・ブランドーから授かった「天国へ行く方法」の手帳を元に、<br>
+    宇宙の真理＝「天国」に到達することを生涯の使命として生きた。</p>
+  </section>
+
+  <section class="quotes card">
+    <h2>名言</h2>
+    <ul class="quote-list">
+      <li>「無駄無駄無駄ァ！……ではなく、これはプッチ神父のサイトだ」</li>
+      <li>「加速するッ！時は加速するッ！！」</li>
+      <li>「緑色の赤ちゃんを追え」</li>
+      <li>「ウェザーよ、お前とは友人でいたかった」</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Made with ❤ / JoJo第6部「ストーンオーシャン」より</p>
+</footer>
+
+<script>
+const stars = document.getElementById("stars");
+for (let i = 0; i < 120; i++) {
+  const s = document.createElement("div");
+  s.className = "star";
+  s.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*3}s;width:${Math.random()*3+1}px;height:${s.style.width}`;
+  stars.appendChild(s);
+}
+</script>
+</body>
+</html>
